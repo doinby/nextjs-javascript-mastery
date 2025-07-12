@@ -6,9 +6,16 @@ export default function SearchForm() {
 
 	return (
 		<Form action='/' scroll={false} className='search-form'>
-			<input name='query' defaultValue={query} placeholder='Search Starups' />
+			<input
+				name='query'
+				defaultValue={query}
+				placeholder='Search Starups'
+				className='input'
+			/>
 			{query && <SearchFormResetBtn />}
-			<button type='submit'>Submit</button>
+			<button type='submit' className='btn'>
+				Submit
+			</button>
 		</Form>
 	);
 }

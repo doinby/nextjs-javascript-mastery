@@ -7,7 +7,7 @@ export default function SearchFormResetBtn() {
 	}
 
 	return (
-		<button type='reset' onClick={reset}>
+		<button type='reset' onClick={reset} className='btn btn-square'>
 			❌
 		</button>
 	);
